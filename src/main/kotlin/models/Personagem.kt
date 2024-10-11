@@ -1,10 +1,7 @@
 package models
 
 import services.RacaStrategy
-import services.Elfo
-import services.Humano
-import models.Anao
-
+import models.*
 class Personagem(
     val nome: String,
     val raca: RacaStrategy,
