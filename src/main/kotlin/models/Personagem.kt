@@ -33,7 +33,7 @@ class Personagem(
         }
     }
 
-    private val modificadorConstituicao: Int
+     val modificadorConstituicao: Int
         get() = (constituicao - 10) / 2
 
 
