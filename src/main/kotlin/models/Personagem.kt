@@ -6,15 +6,21 @@ import services.Humano
 import models.Anao
 
 class Personagem(
-    val nome: String = null,
-    val raca: RacaStrategy = null,
-    var forca: Int= null,
-    var destreza: Int= null,
-    var constituicao: Int= null,
-    var inteligencia: Int= null,
-    var sabedoria: Int= null,
-    var carisma: Int= null
-) {
+    val nome: String,
+    val raca: RacaStrategy,
+    var forca: Int,
+    var destreza: Int,
+    var constituicao: Int,
+    var inteligencia: Int,
+    var sabedoria: Int,
+    var carisma: Int
+)
+
+class Personagem(
+    
+)
+
+{
 
     fun readName(): String {
         println("Digite o nome do seu personagem:")
