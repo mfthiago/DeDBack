@@ -6,4 +6,5 @@ interface RacaStrategy {
     fun aplicarBonus(atributos: Atributos)
 
 
+
 }

@@ -14,29 +14,7 @@ class Personagem(
     var inteligencia: Int,
     var sabedoria: Int,
     var carisma: Int
-) : Parcelable {
-
-    constructor(parcel: Parcel) : this(
-        parcel.readString()!!,
-        parcel.readParcelable(RacaStrategy::class.java.classLoader)!!,
-        parcel.readInt(),
-        parcel.readInt(),
-        parcel.readInt(),
-        parcel.readInt(),
-        parcel.readInt(),
-        parcel.readInt()
-    )
-
-    override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeString(nome)
-        parcel.writeParcelable(raca, flags)
-        parcel.writeInt(forca)
-        parcel.writeInt(destreza)
-        parcel.writeInt(constituicao)
-        parcel.writeInt(inteligencia)
-        parcel.writeInt(sabedoria)
-        parcel.writeInt(carisma)
-    }
+) {
 
     class Personagem(){
 
