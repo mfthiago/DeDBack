@@ -84,6 +84,18 @@ class Personagem(
                 println("Carisma: +2")
             }
         }
+
+        fun getRacaStrategy(selectedRace: String): RacaStrategy {
+            return when (selectedRace) {
+                "Elfo" -> Elfo()
+                "Humano" -> Humano()
+                "Anão" -> Anao()
+                "Orc" -> Orc()
+                "Gnomo" -> Gnomo()
+                "Meio-Elfo" -> MeioElfo()
+                else -> throw IllegalArgumentException("Raça desconhecida: $selectedRace")
+            }
+        }
         fun mostrarBonusRaca() {
             println("\nBônus Racial Aplicado:")
 
