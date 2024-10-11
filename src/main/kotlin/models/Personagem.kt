@@ -15,7 +15,10 @@ class Personagem(
     var sabedoria: Int,
     var carisma: Int
 ) {
-    
+
+    class Personagem(){
+
+    }
 
     val modificadorConstituicao: Int
         get() = (constituicao - 10) / 2
