@@ -14,32 +14,14 @@ class Personagem(
     var inteligencia: Int,
     var sabedoria: Int,
     var carisma: Int
-)
+) {
+    
 
-class Personagem(
-
-)
-
-{
-
-    fun readName(): String {
-        println("Digite o nome do seu personagem:")
-        val input = readLine()
-        return if (!input.isNullOrBlank()) {
-            input
-        } else {
-            println("Nome inválido. O nome foi definido como 'Unknown'.")
-            "Unknown"
-        }
-    }
-
-     val modificadorConstituicao: Int
+    val modificadorConstituicao: Int
         get() = (constituicao - 10) / 2
-
 
     val pontosDeVida: Int
         get() = 10 + modificadorConstituicao
-
 
     fun aplicarBonusRacial() {
         val atributos = Atributos(forca, destreza, constituicao, inteligencia, sabedoria, carisma)
@@ -51,7 +33,6 @@ class Personagem(
         sabedoria = atributos.sabedoria
         carisma = atributos.carisma
     }
-
 
     fun mostrarBonusRacial() {
         println("\nBônus Racial Aplicado:")
@@ -79,5 +60,4 @@ class Personagem(
             }
         }
     }
-
 }
