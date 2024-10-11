@@ -1,7 +1,5 @@
 package models
 
-import android.os.Parcel
-import android.os.Parcelable
 import services.RacaStrategy
 import models.*
 
@@ -63,17 +61,7 @@ class Personagem(
             }
         }
 
-        fun getRacaStrategy(selectedRace: String): RacaStrategy {
-            return when (selectedRace) {
-                "Elfo" -> Elfo()
-                "Humano" -> Humano()
-                "Anão" -> Anao()
-                "Orc" -> Orc()
-                "Gnomo" -> Gnomo()
-                "Meio-Elfo" -> MeioElfo()
-                else -> throw IllegalArgumentException("Raça desconhecida: $selectedRace")
-            }
-        }
+
         fun mostrarBonusRaca() {
             println("\nBônus Racial Aplicado:")
 
