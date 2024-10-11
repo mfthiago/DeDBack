@@ -17,7 +17,7 @@ class Personagem(
 )
 
 class Personagem(
-    
+
 )
 
 {
@@ -44,8 +44,6 @@ class Personagem(
     fun aplicarBonusRacial() {
         val atributos = Atributos(forca, destreza, constituicao, inteligencia, sabedoria, carisma)
         raca.aplicarBonus(atributos)
-
-
         forca = atributos.forca
         destreza = atributos.destreza
         constituicao = atributos.constituicao
