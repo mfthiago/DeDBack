@@ -1,4 +1,4 @@
-package services
+package models
 
 import models.Atributos
 import services.RacaStrategy // Certifique-se de que a importação está correta
